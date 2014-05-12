@@ -1,0 +1,5 @@
+How to compile:
+$ g++ cactus.cpp -std=c++11 -o cactus
+
+How to run:
+$ ./cactus

@@ -1,0 +1,2 @@
+g++ -c Reader.cpp Transformer.cpp Writter.cpp -std=c++11
+g++ main.cpp Reader.o Transformer.o Writter.o -o c-cactus -std=c++11

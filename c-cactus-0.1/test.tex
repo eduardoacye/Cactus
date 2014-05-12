@@ -1,0 +1,90 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+
+\linespread{1.05}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\hfill {\LARGE \textbf{Programa en C++} }
+
+\bigskip
+
+
+\hfill {\large \textbf{Eduardo Acuña Yeomans} }
+
+\bigskip
+
+
+\bigskip
+
+Este programa es una demostración para el programa c-cactus
+derivado de cactus (generador de código \LaTeX  a partir de código en
+Scheme).
+
+\bigskip
+
+
+\begin{verbatim}
+#include <iostream>
+\end{verbatim}
+
+
+\begin{verbatim}
+using namespace std;
+\end{verbatim}
+
+
+\bigskip
+
+\bigskip
+
+\textbf{f :} \emph{Real} $\boldsymbol{\rightarrow}$ \emph{Real}
+
+
+Function defined as $f(x)=x^2+3x-\frac{x}{0.23}+9.2$.
+\begin{verbatim}
+double f(double x)
+{
+    return x*x + 3x - x/.23 + 9.2;
+}
+\end{verbatim}
+
+
+\bigskip
+
+\bigskip
+
+\textbf{main :} \emph{Integer} $\times$ \emph{String} $\boldsymbol{\rightarrow}$ \emph{Integer}
+
+
+Un `holamundo` común y corriente.
+\begin{verbatim}
+int main(int argc, char ** argv)
+{
+    cout << "Hola mundo";
+\end{verbatim}
+
+
+\begin{verbatim}
+    // Imprime en pantalla el valor de f evaluado en 2.
+    cout << f(2) << endl;
+\end{verbatim}
+
+
+\begin{verbatim}
+    return 0;
+}
+\end{verbatim}
+
+
+
+
+\end{document}

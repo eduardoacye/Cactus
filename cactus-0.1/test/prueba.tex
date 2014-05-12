@@ -1,0 +1,52 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+
+\linespread{1.05}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\hfill {\LARGE \textbf{Programa del factorial} }
+
+\bigskip
+
+
+\hfill {\large \textbf{Eduardo Acuña Yeomans} }
+
+\bigskip
+
+
+\bigskip
+
+La clásica función factorial.
+$$n!=n*(n-1)*(n-1)*...*2*1$$
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\textbf{factorial :} \emph{numero} $\boldsymbol{\rightarrow}$ \emph{numero}
+
+
+Return n! = n(n-1)...1 .
+\begin{verbatim}
+(define (factorial n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))))
+\end{verbatim}
+
+
+
+
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+
+\linespread{1.05}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\hfill {\LARGE \textbf{Factorial, fibonacci, first and second procedures} }
+
+\bigskip
+
+
+\hfill {\large \textbf{Eduardo Acuña Yeomans} }
+
+\bigskip
+
+
+\bigskip
+
+This file contains four procedure definitions:
+factorial and fibonacci are well known clasic recursive functions
+but first and second aren't usefull at all, they just select one of
+the two arguments.
+
+Part of the test for the cactus program.
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\textbf{factorial :} \emph{number} $\boldsymbol{\rightarrow}$ \emph{number}
+
+
+Return the factorial of the number $n$, where
+$n! = n*(n-1)*...*1$.
+\begin{verbatim}
+(define (factorial n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))))
+\end{verbatim}
+
+
+\bigskip
+
+\bigskip
+
+\textbf{fibonacci :} \emph{number} $\boldsymbol{\rightarrow}$ \emph{number}
+
+
+Return the $n^{th}$ number of the fibonacci sequence.
+\begin{verbatim}
+(define (fibonacci n)
+  (if (or (= n 0)
+          (= n 1))
+      1
+      (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
+\end{verbatim}
+
+
+\bigskip
+
+\bigskip
+
+\textbf{first :} \emph{number} $\times$ \emph{number} $\boldsymbol{\rightarrow}$ \emph{number}
+
+
+Return the first argument.
+\begin{verbatim}
+(define (first a b) a)
+\end{verbatim}
+
+
+\bigskip
+
+\bigskip
+
+\textbf{second :} \emph{number} $\times$ \emph{number} $\boldsymbol{\rightarrow}$ \emph{number}
+
+
+Return the second argument.
+\begin{verbatim}
+(define (second a b) b)
+\end{verbatim}
+
+
+
+
+\end{document}
