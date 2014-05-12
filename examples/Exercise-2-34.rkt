@@ -33,7 +33,7 @@
   (if (null? sequence)
       initial
       (op (car sequence)
-	  (accumulate op initial (cdr sequence)))))
+          (accumulate op initial (cdr sequence)))))
 
 ;;; *contract* horner-eval : number , list -> number
 ;;; *description* Return the evaluation of the polynomial with the coefficients
@@ -41,6 +41,6 @@
 ;;; using Horner's rule.
 (define (horner-eval x coefficient-sequence)
   (accumulate (lambda (this-coeff higher-terms)
-		(+ this-coeff (* x higher-terms)))
-	      0
-	      coefficient-sequence))
+                (+ this-coeff (* x higher-terms)))
+              0
+              coefficient-sequence))
